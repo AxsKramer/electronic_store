@@ -215,7 +215,7 @@ export const ContainerScrollX = styled.div`
 
 export const FooterStyled = styled.footer`
   width: 100%;
-  background: #004e92;
+  background: #000428;
   text-align: center;
   color: white;
   padding-bottom: .8rem;
