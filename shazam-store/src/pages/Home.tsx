@@ -6,14 +6,14 @@ const Home = () => {
     <>
       {/* Type of payments */}
       <Container width='80%'>
-        <Container>
-          <img src="/images/envio.png" alt="" width='100%'/>
+        <Container width='320px'>
+          <img src="/images/envio.png" alt="" width='320px'/>
         </Container>
-        <Container>
-          <img src="/images/pago.png" alt="" width='100%'/>
+        <Container width='320px'>
+          <img src="/images/pago.png" alt="" width='320px'/>
         </Container>
-        <Container>
-          <img src="/images/mesessin.png" alt="" width='100%'/>
+        <Container width='320px'>
+          <img src="/images/mesessin.png" alt="" width='320px'/>
         </Container>
       </Container>
 
@@ -74,14 +74,14 @@ const Home = () => {
       {/* Phone companies */}
       <Subtitle>Telecommunications companies</Subtitle>
       <Container background='whitesmoke' width='80%' >
-        <Container>
-          <img src="https://www.telcel.com/content/dam/htmls/img/icons/logo-telcel.svg" width='50%' alt=""/>
+        <Container width='280px'>
+          <img src="https://www.telcel.com/content/dam/htmls/img/icons/logo-telcel.svg" width='280' alt=""/>
         </Container>
-        <Container>
-          <img src="https://www.att.com.mx/assets/img/logos/logo-default.png" width='50%' alt=""/>
+        <Container width='280px'>
+          <img src="https://www.att.com.mx/assets/img/logos/logo-default.png" width='280' alt=""/>
         </Container>
-        <Container>
-          <img src="https://logos-download.com/wp-content/uploads/2016/06/Movistar_logo_logotipo.png" width='50%' alt=""/>
+        <Container width='280px'>
+          <img src="https://logos-download.com/wp-content/uploads/2016/06/Movistar_logo_logotipo.png" width='280' alt=""/>
         </Container>
       </Container>
     </>

@@ -1,5 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-import {NavLink} from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 interface WidthContainer {
   width?: string;
@@ -121,16 +121,55 @@ export const Container = styled.div<WidthContainer>`
   height: ${({height}) => height && height};
   display: flex;
   justify-content: center;
-  padding: .5rem;
+  padding: .8rem;
   width: ${(props) => props.width ? props.width : '100%' };
   margin: 0 auto;
   background: ${({background}) => background ? background : 'transparent'};
+  position: relative; 
+  flex-wrap: wrap;
 
   @media screen and (max-width: 766px){
     width: 100%;
-    flex-wrap: wrap;
     padding: 0;
-    height: ${({height}) => height && '350px'};
+    height: ${({height}) => height && '300px'};
+  }
+`
+
+export const ContainerOverlay = styled.div`
+  height: 25%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, black, transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px black;
+`;
+
+export const LinkButtonGo = styled(Link)`
+  text-decoration: none;
+  background: #ff7415;
+  color: white;
+  font-weight: bold;
+  padding: .3rem;
+  margin-top: .5rem;
+  width: 120px;
+  text-align: center;
+  border-radius: 12px;
+  transition: all .5s;
+
+  &:hover{
+    filter: brightness(80%);
+    transform: translateY(-.3rem);
+  }
+
+  &:active{
+    filter: brightness(120%);
+    transform: translateY(.3rem) scale(.9);
   }
 `
 
