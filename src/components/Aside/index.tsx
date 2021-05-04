@@ -11,16 +11,16 @@ const Aside = ({isActiveBurgerButton} : any) => {
             <NavLinkStyled to="/">Home</NavLinkStyled>
           </ListItem>
           <ListItem>
-            <NavLinkStyled to="/categories">Categories</NavLinkStyled>
+            <NavLinkStyled to="/categorias">Categories</NavLinkStyled>
           </ListItem>
           <ListItem>
-            <NavLinkStyled to="/offers">Offers</NavLinkStyled>
+            <NavLinkStyled to="/ofertas">Ofertas</NavLinkStyled>
           </ListItem>
           <ListItem>
-            <NavLinkStyled to="/contact">Contact</NavLinkStyled>
+            <NavLinkStyled to="/contacto">Contacto</NavLinkStyled>
           </ListItem>
           <ListItem>
-            <NavLinkStyled to="/about">About</NavLinkStyled>
+            <NavLinkStyled to="/nosotros">Nosotros</NavLinkStyled>
           </ListItem>
         </Ulist>
       </Container>
