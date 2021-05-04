@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, ContainerOverlay, LinkButtonGo, Subtitle } from "../styles/index";
 
 const Categories = () => {
   return (
     <>
-      <Subtitle>Categories</Subtitle>
+      <Subtitle>Categorias</Subtitle>
       <Container width="80%">
         <Container width="320px">
           <img
@@ -14,8 +13,8 @@ const Categories = () => {
             alt=""
           />
           <ContainerOverlay>
-            <h3>Computers</h3>
-            <LinkButtonGo to="/categories/computers">Go</LinkButtonGo>
+            <h3>Computadoras</h3>
+            <LinkButtonGo to="/categorias/computadoras">Ir</LinkButtonGo>
           </ContainerOverlay>
         </Container>
 
@@ -26,8 +25,8 @@ const Categories = () => {
             alt=""
           />
           <ContainerOverlay>
-            <h3>Tablets and Phones</h3>
-            <LinkButtonGo to="/categories/games">Go</LinkButtonGo>
+            <h3>Tablets y Celulares</h3>
+            <LinkButtonGo to="/categorias/celulares">Ir</LinkButtonGo>
           </ContainerOverlay>
         </Container>
 
@@ -38,8 +37,8 @@ const Categories = () => {
             alt=""
           />
           <ContainerOverlay>
-            <h3>Music</h3>
-            <LinkButtonGo to="/categories/headphones">Go</LinkButtonGo>
+            <h3>Audifonos</h3>
+            <LinkButtonGo to="/categorias/audifonos">Ir</LinkButtonGo>
           </ContainerOverlay>
         </Container>
 
@@ -51,8 +50,8 @@ const Categories = () => {
           />
 
           <ContainerOverlay>
-            <h3>Video Games</h3>
-            <LinkButtonGo to="/categories/games">Go</LinkButtonGo>
+            <h3>Video Juegos</h3>
+            <LinkButtonGo to="/categorias/videojuegos">Ir</LinkButtonGo>
           </ContainerOverlay>
         </Container>
 
@@ -65,7 +64,7 @@ const Categories = () => {
 
           <ContainerOverlay>
             <h3>Drones</h3>
-            <LinkButtonGo to="/categories/drones">Go</LinkButtonGo>
+            <LinkButtonGo to="/categorias/drones">Ir</LinkButtonGo>
           </ContainerOverlay>
         </Container>
       </Container>
