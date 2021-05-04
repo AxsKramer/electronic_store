@@ -1,7 +1,7 @@
 import styled, {keyframes} from 'styled-components';
 import { NavLink, Link } from 'react-router-dom';
 
-interface WidthContainer {
+interface iContainer {
   width?: string;
   background?: string;
   height?: string;
@@ -110,6 +110,7 @@ export const DivLogo = styled.div<ILogo>`
   & img{   
     background: ${({withBg}) => withBg ? '#004e92' : 'transparent' };
     border-radius: ${({withBg}) => withBg ? '50%' : '0px'};
+    margin-top: ${({withBg}) => withBg ? '3rem' : '0px'};
   }
   
   @media screen and (max-width: 766px){
@@ -126,7 +127,7 @@ export const ImageHero = styled.img`
   }
 `;
 
-export const Container = styled.div<WidthContainer>`
+export const Container = styled.div<iContainer>`
   min-height: 30px;
   max-height: fit-content;
   height: ${({height}) => height && height};
@@ -271,4 +272,12 @@ export const FooterStyled = styled.footer`
   color: white;
   padding-bottom: .8rem;
   margin-top: 2rem;
+`;
+
+export const Ptag = styled.p`
+  text-align: justify;
+  
+  @media screen and (max-width: 766px){
+    padding: 0 2rem;
+  }
 `;
