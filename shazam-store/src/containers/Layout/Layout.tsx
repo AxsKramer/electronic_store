@@ -17,7 +17,7 @@ const Layout : FunctionComponent = ({children}) => {
       <Header />
       <Hero />
       <HamburgerButton isActiveBurgerButton={isActiveBurgerButton} setActiveBurgerButton={setActiveBurgerButton}/>
-      {isActiveBurgerButton && <Aside  isActiveBurgerButton={isActiveBurgerButton} />}
+       <Aside  isActiveBurgerButton={isActiveBurgerButton} />
       {children}
       <Footer />
     </SuperContainer>

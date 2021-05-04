@@ -23,7 +23,7 @@ const Home = () => {
       </Container>
 
       {/* What things people search */}
-      <Subtitle>The most wanted </Subtitle>
+      <Subtitle>Lo más buscado </Subtitle>
       <Container width='80%'>
         <ContainerScrollX >
           <Container >
@@ -44,7 +44,7 @@ const Home = () => {
       </Container>
 
       {/* Season video games */}
-      <Subtitle>Video games of the season</Subtitle>
+      <Subtitle>Video juegos de temporada</Subtitle>
       <Container width='80%'>
         <ContainerScrollX>
           <Container>
@@ -66,13 +66,13 @@ const Home = () => {
       </Container>
 
       {/* New products */}
-      <Subtitle>Coming soon</Subtitle>
+      <Subtitle>Proximamente</Subtitle>
       <Container width='80%'>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/cxXvYJyBlc4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </Container>
 
       {/* Phone companies */}
-      <Subtitle>Telecommunications companies</Subtitle>
+      <Subtitle>Compañias Telefonicas</Subtitle>
       <Container background='whitesmoke' width='80%' >
         <Container width='280px'>
           <img src="https://www.telcel.com/content/dam/htmls/img/icons/logo-telcel.svg" width='280' alt=""/>

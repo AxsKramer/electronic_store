@@ -9,27 +9,27 @@ const SmallNavbar = () => {
         <SmallNav>
           <Ulist>
             <li title='Computers'>
-              <Link to='/categories/computers'>
+              <Link to='/categorias/computadoras'>
                 <GiLaptop />
               </Link>
             </li>
             <li title='Cell phones'>
-              <Link to='/categories/phones'>
+              <Link to='/categorias/celulares'>
                 <GiSmartphone />
               </Link>
               </li>
             <li title='Head phones'>
-              <Link to='/categories/headphones'>
+              <Link to='/categorias/audifonos'>
                 <ImHeadphones />
               </Link>
               </li>
             <li title='Video Games and Consoles'>
-              <Link to='/categories/games'>
+              <Link to='/categorias/videojuegos'>
                 <GiConsoleController />
               </Link>
               </li>
             <li title='Drones'>
-              <Link to='/categories/drones'>
+              <Link to='/categorias/drones'>
                 <GiDeliveryDrone />
               </Link>
               </li>

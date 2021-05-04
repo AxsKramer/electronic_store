@@ -5,6 +5,7 @@ interface WidthContainer {
   width?: string;
   background?: string;
   height?: string;
+  direction?: string;
 }
 
 interface UlistDirection {
@@ -13,6 +14,10 @@ interface UlistDirection {
 
 interface AsideOpen {
   isOpen: boolean;
+}
+
+export interface ILogo {
+  withBg?: boolean;
 }
 
 const open = keyframes`
@@ -97,10 +102,16 @@ export const ListItem = styled.li`
 padding: 1rem 0;
 `;
 
-export const DivLogo = styled.div`
+export const DivLogo = styled.div<ILogo>`
   width: 40%;
   margin: 0 auto;
   text-align: center;
+  
+  & img{   
+    background: ${({withBg}) => withBg ? '#004e92' : 'transparent' };
+    border-radius: ${({withBg}) => withBg ? '50%' : '0px'};
+  }
+  
   @media screen and (max-width: 766px){
     width: 100%;
     text-align: center;
@@ -120,6 +131,7 @@ export const Container = styled.div<WidthContainer>`
   max-height: fit-content;
   height: ${({height}) => height && height};
   display: flex;
+  flex-direction: ${({direction}) => direction === 'column' ? direction : 'row' };
   justify-content: center;
   padding: .8rem;
   width: ${(props) => props.width ? props.width : '100%' };

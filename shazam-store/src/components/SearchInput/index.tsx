@@ -11,8 +11,8 @@ const SearchInput = () => {
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
-        <InputText type="text" placeholder='Search a product' value={search} onChange={(e) => setSearch(e.target.value) }/>
-        <SearchButton type="submit" value='Search'/>
+        <InputText type="text" placeholder='Buscar producto' value={search} onChange={(e) => setSearch(e.target.value) }/>
+        <SearchButton type="submit" value='Buscar'/>
       </Form>
     </Container>
   )
